@@ -54,6 +54,11 @@ namespace DataAccess.Concrete
             return _carList.Where(c => c.ColorId == colorId).ToList();
         }
 
+        public Car GetById(int id)
+        {
+            return _carList.Single(c=>c.Id==id);
+        }
+
         public void Update(Car car)
         {
             Car carToUpdate=_carList.SingleOrDefault(c=>c.Id==car.Id);
