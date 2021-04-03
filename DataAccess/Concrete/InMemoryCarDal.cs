@@ -3,8 +3,7 @@ using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace DataAccess.Concrete
 {
@@ -39,14 +38,24 @@ namespace DataAccess.Concrete
             _carList.Remove(car);
         }
 
+        public Car Get(Expression<Func<Car, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Car> GetAll()
+        {
+            return _carList;
+        }
+
+        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
         {
             return _carList;
         }
 
         public List<Car> GetAllByBrand(int brandId)
         {
-            return _carList.Where(c=>c.BrandId==brandId).ToList();
+            return _carList.Where(c => c.BrandId == brandId).ToList();
         }
 
         public List<Car> GetAllByColor(int colorId)
@@ -56,12 +65,12 @@ namespace DataAccess.Concrete
 
         public Car GetById(int id)
         {
-            return _carList.Single(c=>c.Id==id);
+            return _carList.Single(c => c.Id == id);
         }
 
         public void Update(Car car)
         {
-            Car carToUpdate=_carList.SingleOrDefault(c=>c.Id==car.Id);
+            Car carToUpdate = _carList.SingleOrDefault(c => c.Id == car.Id);
             carToUpdate.ModelYear = car.ModelYear;
             carToUpdate.BrandId = car.BrandId;
             carToUpdate.ColorId = car.ColorId;

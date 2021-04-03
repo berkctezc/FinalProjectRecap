@@ -1,9 +1,10 @@
 ﻿--Database Creation
 create database CarProjectDB;
+use CarProjectDB;
 
 --Car Table
 create table Cars(
-    Id int PRIMARY KEY not null,
+    Id int,
     BrandId int,
     ColorId int,
     ModelYear varchar(4),
@@ -13,12 +14,14 @@ create table Cars(
 
 --Brand Table
 create table Brands(
-       Id int PRIMARY KEY not null,
+       Id int,
        Name varchar(100)
 );
 
 --Color table
 create table Colors(
-       Id int PRIMARY KEY not null,
+       Id int,
        Name varchar(100)
 );
+
+--Truncate Table Cars
