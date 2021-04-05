@@ -17,16 +17,16 @@ namespace UI
             BrandManager brandManagerEF = new BrandManager(new EfBrandDal());
             ColorManager colorManagerEF = new ColorManager(new EfColorDal());
 
-            //Test Edildi:GetAll,GetById,Add,Update,Delete
+            //Test Edildi:GetAll,GetById,Add,Update,Delete,DTO
 
             //AddEntries(carManagerEF, brandManagerEF, colorManagerEF);
             //UpdateEntries(carManagerEF, brandManagerEF, colorManagerEF);
             DeleteTest(colorManagerEF);
 
             Console.WriteLine("===Car GetAll===");
-
-            foreach (var car in carManagerEF.GetAll())
-                DetailPrintCar(car);
+            //GetAllCarDetail(carManagerEF);
+            Console.WriteLine("---DTO GetCarDetails:");
+            GetCarDetailsDtoTest(carManagerEF);
 
             Console.WriteLine("---Car GetById:" + carManagerEF.GetById(2).Description);
 
@@ -46,6 +46,35 @@ namespace UI
 
         }
 
+        private static void GetCarDetailsDtoTest(CarManager carManagerEF)
+        {
+            foreach (var car in carManagerEF.GetCarDetails())
+            {
+                Console.WriteLine(
+                    "* Aciklama: {0} | Ücret: {1} | Yıl: {2} | Marka: {3} | Renk: {4} ",
+                    car.Description,
+                    car.DailyPrice,
+                    car.ModelYear,
+                    car.BrandName,
+                    car.ColorName);
+            }
+        }
+
+        private static void GetAllCarDetail(CarManager carManagerEF)
+        {
+            foreach (var car in carManagerEF.GetAll())
+            {
+                Console.WriteLine(
+                "* Aciklama: {0} | Ücret: {1} | Yıl: {2} | Marka: {3} | Renk: {4} ", 
+                car.Description,
+                car.DailyPrice,
+                car.ModelYear,
+                car.BrandId,
+                car.ColorId);
+            }
+        }
+
+        //Metodlar
         private static void DeleteTest(ColorManager colorManagerEF)
         {
             colorManagerEF.Add(new Color { Id = 5, Name = "YanlışRenk" });
@@ -93,16 +122,12 @@ namespace UI
         }
 
 
-
-
-        //Metodlar
-
         private static void InMemoryTest()
         {
             CarManager carManager = new CarManager(new InMemoryCarDal());
             InMemoryCarDal inMemoryCarDal = new InMemoryCarDal();
 
-            GetAllTest(carManager);
+            GetAllTest(inMemoryCarDal);
             Console.WriteLine("------");
             AddTestInMemory(inMemoryCarDal);
             Console.WriteLine("------");
@@ -128,26 +153,26 @@ namespace UI
 
             foreach (var car in inMemoryCarDal.GetAll())
             {
-                DetailPrintCar(car);
-            }
-        }
-
-        private static void DetailPrintCar(Car car)
-        {
-            Console.WriteLine(
+                Console.WriteLine(
                 "* Aciklama: {0} | Ücret: {1} | Yıl: {2} | Marka: {3} | Renk: {4} ", car.Description,
                 car.DailyPrice,
                 car.ModelYear,
                 car.BrandId,
                 car.ColorId);
+            };
         }
 
-        private static void GetAllTest(CarManager carManager)
+        private static void GetAllTest(InMemoryCarDal inMemoryCarDal)
         {
-            foreach (var car in carManager.GetAll())
+            foreach (var car in inMemoryCarDal.GetAll())
             {
-                DetailPrintCar(car);
-            }
+                Console.WriteLine(
+                "* Aciklama: {0} | Ücret: {1} | Yıl: {2} | Marka: {3} | Renk: {4} ", car.Description,
+                car.DailyPrice,
+                car.ModelYear,
+                car.BrandId,
+                car.ColorId);
+            }; ;
         }
     }
 }
