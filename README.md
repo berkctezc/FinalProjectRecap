@@ -2,8 +2,9 @@
 
 ------
 
+[TOC]
 
-- #### Gün 7 Ödev 2 ✔
+#### Gün 7 Ödev 2 ✔
 
 ```csharp
 /* 
@@ -29,7 +30,7 @@ Kodlarınızı Github'a aktarıp paylaşınız. İncelediğiniz arkadaşlarını
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/ad7f2f932fdf77db02d4dcb750f9bb2c663b8d5a)
 
-* #### Gün 8 Ödev 1 ✔
+#### Gün 8 Ödev 1 ✔
 
 ```c#
 /*
@@ -62,3 +63,23 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
 ```
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a0a15887ec6b98d8e7bb7cbeeb2bdd4cab223a49)
+
+#### Gün 9 Ödev 1 ✔
+
+```c#
+/*
+Not : İsteyenler Northwind projesindeki Core katmanını da ekleyebilir ama pekiştirmek için yeniden yazmanızı öneririm. Bu şekilde yapmak isteyenler CarRental/Solution Explorer Sağ Tık / Add /Existing Project/ Northwind içindeki Core klasöründe Core.csproj dosyasını ekleyebilirler. Bu şekilde yapanlar aşağıdaki 3. adımdan devam edebilirler.
+
+Önerim aşağıdaki gibi yeniden yapmanızdır.
+
+CarRental Projenizde Core katmanı oluşturunuz.
+IEntity, IDto, IEntityRepository, EfEntityRepositoryBase dosyalarınızı 9. gün dersindeki gibi oluşturup ekleyiniz.
+Car, Brand, Color sınıflarınız için tüm CRUD operasyonlarını hazır hale getiriniz.
+Console'da Tüm CRUD operasyonlarınızı Car, Brand, Model nesneleriniz için test ediniz. GetAll, GetById, Insert, Update, Delete.
+Arabaları şu bilgiler olacak şekilde listeleyiniz. CarName, BrandName, ColorName, DailyPrice. (İpucu : IDto oluşturup 3 tabloya join yazınız)
+Kodlarınızı Github hesabınızda paylaşıp link veriniz.
+Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
+*/
+```
+
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/185c97f49f08cefa242e6efacf33dfef497dce74)
