@@ -15,3 +15,5 @@ C:\Users\berkc\OneDrive\repos\FinalProjectRecap\Business\obj\Debug\net5.0\Busine
 C:\Users\berkc\OneDrive\repos\FinalProjectRecap\Business\obj\Debug\net5.0\Business.dll
 C:\Users\berkc\OneDrive\repos\FinalProjectRecap\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\berkc\OneDrive\repos\FinalProjectRecap\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\berkc\OneDrive\repos\FinalProjectRecap\Business\bin\Debug\net5.0\Core.dll
+C:\Users\berkc\OneDrive\repos\FinalProjectRecap\Business\bin\Debug\net5.0\Core.pdb
