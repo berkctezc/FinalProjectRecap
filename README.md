@@ -4,7 +4,9 @@
 
 [TOC]
 
-#### Gün 7 Ödev 2 ✔
+## Gün 7 
+
+### Ödev 2 ✔
 
 ```csharp
 /* 
@@ -30,7 +32,9 @@ Kodlarınızı Github'a aktarıp paylaşınız. İncelediğiniz arkadaşlarını
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/ad7f2f932fdf77db02d4dcb750f9bb2c663b8d5a)
 
-#### Gün 8 Ödev 1 ✔
+## Gün 8 
+
+### Ödev 1 ✔
 
 ```c#
 /*
@@ -64,7 +68,9 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a0a15887ec6b98d8e7bb7cbeeb2bdd4cab223a49)
 
-#### Gün 9 Ödev 1 ✔
+## Gün 9 
+
+### Ödev 1 ✔
 
 ```c#
 /*
@@ -83,3 +89,39 @@ Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 ```
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/185c97f49f08cefa242e6efacf33dfef497dce74)
+
+## Gün 10 
+
+### Ödev 1 ✔
+
+```c#
+/*
+Car Rental Projenizde;
+
+Core katmanında Results yapılandırması yapınız.
+Daha önce geliştirdiğiniz tüm Business sınıflarını bu yapıya göre refactor (kodu iyileştirme) ediniz.
+*/
+```
+
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a07c70c9f9de71cc31d1ad3b7851f67236aac528)
+
+### Ödev 4 ✔
+
+```csharp
+/*
+CarRental projenizde;
+
+- Kullanıcılar tablosu oluşturunuz. Users-->Id,FirstName,LastName,Email,Password
+- Müşteriler tablosu oluşturunuz. Customers-->UserId,CompanyName
+- *****Kullanıcılar ve müşteriler ilişkilidir.
+- Arabanın kiralanma bilgisini tutan tablo oluşturunuz. Rentals-->Id, CarId, CustomerId, RentDate(Kiralama Tarihi), ReturnDate(Teslim Tarihi). Araba teslim edilmemişse ReturnDate null'dır.
+- Projenizde bu entity'leri oluşturunuz.
+- CRUD operasyonlarını yazınız.
+- Yeni müşteriler ekleyiniz.
+- Arabayı kiralama imkanını kodlayınız. Rental-->Add
+- Arabanın kiralanabilmesi için arabanın teslim edilmesi gerekmektedir.
+*/
+```
+
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/85df9ae03a636b6241b5b325804cf767581433db)
+
