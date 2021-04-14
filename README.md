@@ -6,7 +6,7 @@
 
 ## Gün 7 
 
-#### Ödev 2 ✔
+### Ödev 2 ✔
 
 ```csharp
 /* 
@@ -34,7 +34,7 @@ Kodlarınızı Github'a aktarıp paylaşınız. İncelediğiniz arkadaşlarını
 
 ## Gün 8 
 
-#### Ödev 1 ✔
+### Ödev 1 ✔
 
 ```c#
 /*
@@ -70,7 +70,7 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
 
 ## Gün 9 
 
-#### Ödev 1 ✔
+### Ödev 1 ✔
 
 ```c#
 /*
@@ -92,7 +92,7 @@ Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 
 ## Gün 10 
 
-#### Ödev 1 ✔
+### Ödev 1 ✔
 
 ```c#
 /*
@@ -105,7 +105,7 @@ Daha önce geliştirdiğiniz tüm Business sınıflarını bu yapıya göre refa
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a07c70c9f9de71cc31d1ad3b7851f67236aac528)
 
-#### Ödev 4 ✔
+### Ödev 4 ✔
 
 ```csharp
 /*
@@ -127,7 +127,7 @@ CarRental projenizde;
 
 ## Gün 11
 
-#### Ödev 1 ✔
+### Ödev 1 ✔
 
 ```c#
 /*
@@ -141,3 +141,43 @@ Kodlarınızı paylaşınız.
 ```
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/153f788c92e4ca1d43bfa91e748447708697c1d3)
+
+## Gün 12
+
+### Ödev 1 ✔
+
+```csharp
+/*
+Car Rental Projenize Autofac desteği ekleyiniz.
+
+Yazdığınız kodların Github linkini paylaşınız.
+*/
+```
+
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/af249f2f639219a111d824f00cfff6b994530b59)
+
+### Ödev 2
+
+```csharp
+/*
+Car Rental Projenize FluentValidation desteği ekleyiniz.
+
+Yazdığınız kodların Github linkini paylaşınız.
+*/
+```
+
+[Commit]()
+
+### Ödev 3
+
+```csharp
+/*
+Car Rental Projenize AOP desteği ekleyiniz.
+
+ValidationAspect ekleyiniz.
+
+Yazdığınız kodların Github linkini paylaşınız.
+*/
+```
+
+[Commit]()
