@@ -14,6 +14,7 @@ namespace Business.Constants
         public static string CarUpdated = "Araba güncellendi.";
         public static string CarDeleted = "Sistem bakımda";
         public static string CarsListed = "Ürünler listelendi";
+        public static string CarDailyPriceInvalid = "Hatalı araba fiyatı";
         public static string MaintanceTime = "Sistem bakımda";
         //Brand
         internal static string BrandAdded = "Marka eklendi";
