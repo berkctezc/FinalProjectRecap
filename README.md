@@ -156,7 +156,7 @@ Yazdığınız kodların Github linkini paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/af249f2f639219a111d824f00cfff6b994530b59)
 
-### Ödev 2
+### Ödev 2 ✔
 
 ```csharp
 /*
@@ -166,7 +166,7 @@ Yazdığınız kodların Github linkini paylaşınız.
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a1bcd20b553bc8b8e0a245ddfbe00894c47bbd5c)
 
 ### Ödev 3
 
