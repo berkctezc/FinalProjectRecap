@@ -168,7 +168,7 @@ Yazdığınız kodların Github linkini paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a1bcd20b553bc8b8e0a245ddfbe00894c47bbd5c)
 
-### Ödev 3
+### Ödev 3 ✔
 
 ```csharp
 /*
@@ -177,6 +177,30 @@ Car Rental Projenize AOP desteği ekleyiniz.
 ValidationAspect ekleyiniz.
 
 Yazdığınız kodların Github linkini paylaşınız.
+*/
+```
+
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/99612f39ad9c61962881be4f68019bc5541f73a1)
+
+## Gün 13
+
+### Ödev 1
+
+```csharp
+/*
+Artık araştırma yapıp, yeni işlemleri projeye ekleyebilmemiz gerekiyor.
+
+RentACar projenizde;
+
+CarImages (Araba Resimleri) tablosu oluşturunuz. (Id,CarId,ImagePath,Date) Bir arabanın birden fazla resmi olabilir.
+Api üzerinden arabaya resim ekleyecek sistemi yazınız.
+Resimler projeniz içerisinde bir klasörde tutulacaktır. Resimler yüklendiği isimle değil, kendi vereceğiniz GUID ile dosyalanacaktır.
+Resim silme, güncelleme yetenekleri ekleyiniz.
+Bir arabanın en fazla 5 resmi olabilir.
+Resmin eklendiği tarih sistem tarafından atanacaktır.
+Bir arabaya ait resimleri listeleme imkanı oluşturunuz. (Liste)
+Eğer bir arabaya ait resim yoksa, default bir resim gösteriniz. Bu resim şirket logonuz olabilir. (Tek elemanlı liste)
+Github linkinizi paylaşınız.
 */
 ```
 
