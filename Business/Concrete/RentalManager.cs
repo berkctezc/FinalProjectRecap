@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Business.Abstract;
 using Business.Constants;
+using Business.ValidationResolvers.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -16,11 +18,12 @@ namespace Business.Concrete
             _rentalDal = rentalDal;
         }
 
+        [ValidationAspect(typeof(RentalValidator))]
         public IResult Add(Rental rental)
         {
-            //teslim edilmemişse kiralanamaz
-            if (rental.ReturnDate == null)
-                return new ErrorResult(Messages.RentalInvalidation);
+            ////teslim edilmemişse kiralanamaz
+            //if (rental.ReturnDate == null)
+            //    return new ErrorResult(Messages.RentalInvalidation);
 
             _rentalDal.Add(rental);
             return new SuccessResult(Messages.RentalAdded);
