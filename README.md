@@ -204,4 +204,4 @@ Github linkinizi paylaşınız.
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/e2869b32515cfb3a1d431a6675c59aa0e67894f9)
