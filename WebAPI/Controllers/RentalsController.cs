@@ -46,5 +46,27 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpPut("update")]
+        public IActionResult Update(Rental Rental)
+        {
+            var result = _rentalService.Update(Rental);
+            if (result.Success)
+            {
+                return Ok(result.Message);
+            }
+            return BadRequest(result.Message);
+        }
+
+        [HttpDelete("delete")]
+        public IActionResult Delete(Rental rental)
+        {
+            var result = _rentalService.Delete(rental);
+            if (result.Success)
+            {
+                return Ok(result.Message);
+            }
+            return BadRequest(result.Message);
+        }
     }
 }

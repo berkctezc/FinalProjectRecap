@@ -184,7 +184,7 @@ Yazdığınız kodların Github linkini paylaşınız.
 
 ## Gün 13
 
-### Ödev 1
+### Ödev 1 ✔
 
 ```csharp
 /*

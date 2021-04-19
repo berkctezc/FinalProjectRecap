@@ -8,13 +8,8 @@ namespace Business.ValidationResolvers.FluentValidation
     {
         public CarValidator()
         {
-            RuleFor(p => p.DailyPrice).GreaterThan(0).WithMessage(Messages.CarDailyPriceInvalid);
-            RuleFor(p => p.Description).Must(StartWithA);
-        }
-
-        private bool StartWithA(string arg)
-        {
-            return arg.StartsWith("a");
+            RuleFor(c => c.DailyPrice).GreaterThan(0).WithMessage(Messages.CarDailyPriceInvalid);
+            RuleFor(c => c.Description).MinimumLength(3);
         }
     }
 }

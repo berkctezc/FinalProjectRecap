@@ -11,6 +11,7 @@ namespace Business.Abstract
         IDataResult<Car> GetById(int id);
         IDataResult<List<Car>> GetCarsByBrandId(int id);
         IDataResult<List<Car>> GetCarsByColorId(int id);
+        IDataResult<List<Car>> GetByUnitPrice(decimal min, decimal max);
         IDataResult<List<CarDetailDto>> GetCarDetails();
         IResult Add(Car car);
         IResult Delete(Car car);

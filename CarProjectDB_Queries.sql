@@ -49,6 +49,16 @@ create table Rentals(
     ReturnDate date
 );
 
+--CarImages Table
+create table CarImages(
+    Id int,
+    CarId int,
+    ImagePath varchar(255),
+    Date date
+)
+
+
+--
 --Truncate Tables
 use CarProjectDB;
 
@@ -57,3 +67,5 @@ truncate table colors;
 truncate table cars;
 truncate table users;
 truncate table customers;
+truncate table carimages;
+truncate table rentals;

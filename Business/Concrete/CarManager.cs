@@ -31,7 +31,7 @@ namespace Business.Concrete
             //}
             //else
             //    return new ErrorResult(Messages.CarInvalid);
-
+            _carDal.Add(car);
             ValidationTool.Validate(new CarValidator(), car);
             return new SuccessResult(Messages.CarAdded);
         }

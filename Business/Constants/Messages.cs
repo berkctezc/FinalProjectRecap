@@ -41,5 +41,8 @@ namespace Business.Constants
         public static string RentalUpdated = "Kiralama güncellendi";
         public static string RentalDeleted = "Kiralama silindi";
         public static string RentalInvalidation = "Araba kirada";
+        //CarImage        
+        public static string CarImageAdded = "Araba resmi eklendi";
+        internal static string CheckIfImageLimitExceeded="5 Resimden fazla eklenemez";
     }
 }
