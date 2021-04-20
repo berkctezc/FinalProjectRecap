@@ -3,59 +3,66 @@ create database CarProjectDB;
 use CarProjectDB;
 
 --Car Table
-create table Cars(
-    Id int,
-    BrandId int,
-    ColorId int,
-    ModelYear varchar(4),
-    DailyPrice int,
-    Description varchar(100)
+CREATE TABLE [dbo].[Cars] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [BrandId]     INT           NOT NULL,
+    [ColorId]     INT           NOT NULL,
+    [ModelYear]   VARCHAR (4)   NOT NULL,
+    [DailyPrice]  INT           NOT NULL,
+    [Description] VARCHAR (100) NOT NULL,
+    CONSTRAINT [PK_Cars] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 --Brand Table
-create table Brands(
-       Id int,
-       Name varchar(100)
+CREATE TABLE [dbo].[Brands] (
+    [Id]   INT           IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (100) NOT NULL,
+    CONSTRAINT [PK_Brands] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 --Color table
-create table Colors(
-       Id int,
-       Name varchar(100)
+CREATE TABLE [dbo].[Colors] (
+    [Id]   INT           IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (100) NOT NULL,
+    CONSTRAINT [PK_Colors] PRIMARY KEY CLUSTERED ([Name] ASC)
 );
 
 --User Table
-create table Users(
-    Id int,
-    FirstName varchar(20),
-    LastName varchar(20),
-    Email varchar(30),
-    Password varchar(40)
+CREATE TABLE [dbo].[Users] (
+    [Id]        INT          IDENTITY (1, 1) NOT NULL,
+    [FirstName] VARCHAR (20) NOT NULL,
+    [LastName]  VARCHAR (20) NOT NULL,
+    [Email]     VARCHAR (30) NOT NULL,
+    [Password]  VARCHAR (40) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 --Customer Table
-create table Customers(
-    Id int,
-    UserId int,
-    CompanyName varchar(30)
+CREATE TABLE [dbo].[Customers] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [UserId]      INT          NOT NULL,
+    [CompanyName] VARCHAR (30) NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 --Rental Table
-create table Rentals(
-    Id int,
-    CarId int,
-    CustomerId int,
-    RentDate date, 
-    ReturnDate date
+CREATE TABLE [dbo].[Rentals] (
+    [Id]         INT  IDENTITY (1, 1) NOT NULL,
+    [CarId]      INT  NOT NULL,
+    [CustomerId] INT  NOT NULL,
+    [RentDate]   DATE NOT NULL,
+    [ReturnDate] DATE NULL,
+    CONSTRAINT [PK_Rentals] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 --CarImages Table
-create table CarImages(
-    Id int,
-    CarId int,
-    ImagePath varchar(255),
-    Date date
-)
+CREATE TABLE [dbo].[CarImages] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [CarId]     INT           NOT NULL,
+    [ImagePath] VARCHAR (255) NOT NULL,
+    [Date]      DATE          NOT NULL,
+    CONSTRAINT [PK_CarImages] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
 
 --
