@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Business.Constants
+﻿namespace Business.Constants
 {
     public static class Messages
     {
@@ -43,6 +37,7 @@ namespace Business.Constants
         public static string RentalInvalidation = "Araba kirada";
         //CarImage        
         public static string CarImageAdded = "Araba resmi eklendi";
-        internal static string CheckIfImageLimitExceeded="5 Resimden fazla eklenemez";
+        internal static string CheckIfImageLimitExceeded = "5 Resimden fazla eklenemez";
+        public static string AuthorizationDenied = "Yetkilendirme hatası";
     }
 }
