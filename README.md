@@ -1,8 +1,7 @@
-# Yazılımcı Geliştirici Yetiştirme Kampı Ödev Projesi
+# Yazılımcı Geliştirici Yetiştirme Kampı Ödev Projesi - .Net 5.0 Backend API
 
 ------
-
-[TOC]
+[**Angular Frontend**](https://github.com/berkctezc/FinalProjectRecap_angular)
 
 ## Gün 7 
 
