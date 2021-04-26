@@ -1,10 +1,11 @@
+using Core.DependencyResolvers;
+using Core.Extensions;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,14 +22,11 @@ namespace WebAPI
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
             services.AddCors();
-
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -48,6 +46,9 @@ namespace WebAPI
                 });
 
             ServiceTool.Create(services);
+            services.AddDependencyResolvers(new ICoreModule[] {
+                new CoreModule()
+            });
         }
         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -74,20 +75,22 @@ namespace WebAPI
             });
         }
 
-        //private static void SingletonTest(IServiceCollection services)
-        //{
-        //    services.AddSingleton<ICarService, CarManager>();
-        //    services.AddSingleton<ICarDal, EfCarDal>();
-        //    services.AddSingleton<IBrandService, BrandManager>();
-        //    services.AddSingleton<IBrandDal, EfBrandDal>();
-        //    services.AddSingleton<IColorService, ColorManager>();
-        //    services.AddSingleton<IColorDal, EfColorDal>();
-        //    services.AddSingleton<ICustomerService, CustomerManager>();
-        //    services.AddSingleton<ICustomerDal, EfCustomerDal>();
-        //    services.AddSingleton<IRentalService, RentalManager>();
-        //    services.AddSingleton<IRentalDal, EfRentalDal>();
-        //    services.AddSingleton<IUserService, UserManager>();
-        //    services.AddSingleton<IUserDal, EfUserDal>();
-        //}
+        /*
+         private static void SingletonTest(IServiceCollection services){
+            services.AddSingleton<ICarService, CarManager>();
+            services.AddSingleton<ICarDal, EfCarDal>();
+            services.AddSingleton<IBrandService, BrandManager>();
+            services.AddSingleton<IBrandDal, EfBrandDal>();
+            services.AddSingleton<IColorService, ColorManager>();
+            services.AddSingleton<IColorDal, EfColorDal>();
+            services.AddSingleton<ICustomerService, CustomerManager>();
+            services.AddSingleton<ICustomerDal, EfCustomerDal>();
+            services.AddSingleton<IRentalService, RentalManager>();
+            services.AddSingleton<IRentalDal, EfRentalDal>();
+            services.AddSingleton<IUserService, UserManager>();
+            services.AddSingleton<IUserDal, EfUserDal>();
+        }
+        */
+
     }
 }
