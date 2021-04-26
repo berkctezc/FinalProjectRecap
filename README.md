@@ -35,7 +35,7 @@ Kodlarınızı Github'a aktarıp paylaşınız. İncelediğiniz arkadaşlarını
 
 ### Ödev 1 ✔
 
-```c#
+```csharp
 /*
 Araba Kiralama projemiz üzerinde çalışmaya devam edeceğiz.
 
@@ -71,7 +71,7 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
 
 ### Ödev 1 ✔
 
-```c#
+```csharp
 /*
 Not : İsteyenler Northwind projesindeki Core katmanını da ekleyebilir ama pekiştirmek için yeniden yazmanızı öneririm. Bu şekilde yapmak isteyenler CarRental/Solution Explorer Sağ Tık / Add /Existing Project/ Northwind içindeki Core klasöründe Core.csproj dosyasını ekleyebilirler. Bu şekilde yapanlar aşağıdaki 3. adımdan devam edebilirler.
 
@@ -93,7 +93,7 @@ Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 
 ### Ödev 1 ✔
 
-```c#
+```csharp
 /*
 Car Rental Projenizde;
 
@@ -128,7 +128,7 @@ CarRental projenizde;
 
 ### Ödev 1 ✔
 
-```c#
+```csharp
 /*
 CarRental projenizde;
 
@@ -233,7 +233,7 @@ Github adresinizi paylaşınız.
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/e5905b62fe0bcc04d4b90b85c30eb31b7ac61411)
 
 ## Gün 17
 
