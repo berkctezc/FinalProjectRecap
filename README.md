@@ -207,7 +207,7 @@ Github linkinizi paylaşınız.
 
 ## Gün 14
 
-### Ödev 2
+### Ödev 2 ✔
 
 ```csharp
 /*
@@ -217,7 +217,7 @@ GitHub adresinizi paylaşınız.
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/08624e9c71df64712f6125e3dda192473930be7a)
 
 ## Gün 15
 
