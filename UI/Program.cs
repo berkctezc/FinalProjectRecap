@@ -13,7 +13,7 @@ namespace UI
             //InMemoryTest();
 
             Console.WriteLine("EF");
-            CarManager carManagerEF = new CarManager(new EfCarDal());
+            CarManager carManagerEF = new CarManager(new EfCarDal(),new BrandManager(new EfBrandDal()));
             BrandManager brandManagerEF = new BrandManager(new EfBrandDal());
             ColorManager colorManagerEF = new ColorManager(new EfColorDal());
             UserManager userManagerEF = new UserManager(new EfUserDal());

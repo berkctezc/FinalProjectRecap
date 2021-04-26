@@ -3,34 +3,31 @@ using Business.Constants;
 using Business.ValidationResolvers.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
-using Core.DataAccess;
 using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using Business.BusinessAspects.Autofac;
+using DataAccess.Abstract;
 
 namespace Business.Concrete
 {
     public class CarManager : ICarService
     {
-        ICarDal _carDal;
+        private readonly ICarDal _carDal;
+        private readonly IBrandService _brandService;
 
-        public CarManager(ICarDal carDal)
+        public CarManager(ICarDal carDal, IBrandService brandService)
         {
             _carDal = carDal;
+            _brandService = brandService;
         }
 
+        [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
-            //if (car.Description.Length >= 2 && car.DailyPrice > 0)
-            //{
-            //    _carDal.Add(car);
-            //    return new SuccessResult(Messages.CarAdded);
-            //}
-            //else
-            //    return new ErrorResult(Messages.CarInvalid);
             _carDal.Add(car);
             ValidationTool.Validate(new CarValidator(), car);
             return new SuccessResult(Messages.CarAdded);

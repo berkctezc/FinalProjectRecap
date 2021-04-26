@@ -30,10 +30,12 @@ CREATE TABLE [dbo].[Colors] (
 --User Table
 CREATE TABLE [dbo].[Users] (
     [Id]        INT          IDENTITY (1, 1) NOT NULL,
-    [FirstName] VARCHAR (20) NOT NULL,
-    [LastName]  VARCHAR (20) NOT NULL,
-    [Email]     VARCHAR (30) NOT NULL,
-    [Password]  VARCHAR (40) NOT NULL,
+    [FirstName] VARCHAR (50) NOT NULL,
+    [LastName]  VARCHAR (50) NOT NULL,
+    [Email]     VARCHAR (50) NOT NULL,
+    [PasswordHash]  VARBINARY(500) NOT NULL,
+    [PasswordSalt] VARBINARY(500) NOT NULL, 
+    [Status] BIT NOT NULL, 
     CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
@@ -64,9 +66,22 @@ CREATE TABLE [dbo].[CarImages] (
     CONSTRAINT [PK_CarImages] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+--Claims
+CREATE TABLE [dbo].[OperationClaims] (
+    [Id]   INT           IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (250) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+CREATE TABLE [dbo].[UserOperationClaims] (
+    [Id]               INT IDENTITY (1, 1) NOT NULL,
+    [UserId]           INT NOT NULL,
+    [OperationClaimId] INT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
 
---
---Truncate Tables
+-------------------
+--Truncate Tables--
+-------------------
 use CarProjectDB;
 
 truncate table brands;
