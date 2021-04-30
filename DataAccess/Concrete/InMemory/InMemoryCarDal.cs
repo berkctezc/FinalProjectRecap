@@ -1,5 +1,4 @@
-﻿using Core.DataAccess;
-using Entities.Concrete;
+﻿using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;

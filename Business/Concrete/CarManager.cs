@@ -41,7 +41,7 @@ namespace Business.Concrete
         [CacheRemoveAspect("ICarService.Get")]
         public IResult Delete(Car car)
         {
-            _carDal.Delete(car); ;
+            _carDal.Delete(car);
             return new SuccessResult(Messages.CarDeleted);
         }
 
