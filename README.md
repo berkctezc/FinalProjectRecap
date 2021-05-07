@@ -221,7 +221,7 @@ GitHub adresinizi paylaşınız.
 
 ## Gün 15
 
-### Ödev 1
+### Ödev 1 ✔
 
 ```csharp
 /*
@@ -237,7 +237,7 @@ Github adresinizi paylaşınız.
 
 ## Gün 17
 
-### Ödev 1
+### Ödev 1 ✔
 
 ```csharp
 /*
@@ -254,7 +254,7 @@ Kodlarınızı githuba aktarıp paylaşınız.
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/f35495ca0fc62ed1db675a8e4309f10ccfd4107b)
 
 ## Gün 18
 
