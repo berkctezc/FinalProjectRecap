@@ -34,6 +34,7 @@
         public static string RentalAdded = "Kiralama eklendi";
         public static string RentalUpdated = "Kiralama güncellendi";
         public static string RentalDeleted = "Kiralama silindi";
+        public static string RentalsListed = "Kiralamalar Listelendi";
         public static string RentalInvalidation = "Araba kirada";
         //CarImage        
         public static string CarImageAdded = "Araba resmi eklendi";
