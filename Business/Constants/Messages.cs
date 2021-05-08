@@ -8,6 +8,7 @@
         public static string CarUpdated = "Araba güncellendi.";
         public static string CarDeleted = "Sistem bakımda";
         public static string CarsListed = "Ürünler listelendi";
+        public static string CarListed = "Ürün Getirildi";
         public static string CarDailyPriceInvalid = "Hatalı araba fiyatı";
         public static string MaintanceTime = "Sistem bakımda";
         //Brand
@@ -50,5 +51,6 @@
         public static string SuccessfulLogin = "Başarıyla giriş yapıldı";
         public static string UserAlreadyExists = "Kullanıcı zaten bulunmakta";
         public static string AccessTokenCreated = "Erişim tokeni yaratıldı";
+
     }
 }

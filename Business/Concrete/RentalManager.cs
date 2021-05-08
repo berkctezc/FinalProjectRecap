@@ -22,9 +22,6 @@ namespace Business.Concrete
         [ValidationAspect(typeof(RentalValidator))]
         public IResult Add(Rental rental)
         {
-            ////teslim edilmemişse kiralanamaz
-            //if (rental.ReturnDate == null) return new ErrorResult(Messages.RentalInvalidation);
-
             _rentalDal.Add(rental);
             return new SuccessResult(Messages.RentalAdded);
         }

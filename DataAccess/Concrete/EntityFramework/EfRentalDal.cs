@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfRentalDal : EfEntityRepositoryBase<Rental, CarProjectDBContext>, IRentalDal
     {
-        public List<RentalDetailDto> GetRentalDetails(Expression<Func<Rental, bool>> filter = null)
+        public List<RentalDetailDto> GetRentalDetails()
         {
             using (CarProjectDBContext context = new CarProjectDBContext())
             {
@@ -20,8 +20,7 @@ namespace DataAccess.Concrete.EntityFramework
                     join car in context.Cars on rental.CarId equals car.Id
                     join customer in context.Customers on rental.CustomerId equals customer.Id
                     join brand in context.Brands on car.BrandId equals brand.Id
-                    join user in context.Users
-                    on customer.UserId equals user.Id
+                    join user in context.Users on customer.UserId equals user.Id
                     select new RentalDetailDto
                     {
                         Id = rental.Id,

@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Business.BusinessAspects.Autofac;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
 using DataAccess.Abstract;
 
 namespace Business.Concrete
@@ -23,6 +26,7 @@ namespace Business.Concrete
             _carImageDal = carImageDal;
         }
 
+        [SecuredOperation("carImages.add,admin")]
         [ValidationAspect(typeof(CarImageValidator))]
         public IResult Add(IFormFile file, CarImage carImage)
         {
@@ -37,6 +41,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        [SecuredOperation("carImages.add,admin")]
         [ValidationAspect(typeof(CarImageValidator))]
         public IResult Delete(CarImage carImage)
         {
@@ -45,6 +50,7 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        [SecuredOperation("carImages.add,admin")]
         [ValidationAspect(typeof(CarImageValidator))]
         public IResult Update(IFormFile file, CarImage carImage)
         {
@@ -54,7 +60,9 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        [PerformanceAspect(5)]
         [ValidationAspect(typeof(CarImageValidator))]
+        [CacheAspect(10)]
         public IDataResult<List<CarImage>> GetAll()
         {
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll());

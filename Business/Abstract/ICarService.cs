@@ -1,7 +1,9 @@
-﻿using Core.Utilities.Results;
+﻿using System;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace Business.Abstract
 {
@@ -11,8 +13,10 @@ namespace Business.Abstract
         IDataResult<Car> GetById(int id);
         IDataResult<List<Car>> GetCarsByBrandId(int id);
         IDataResult<List<Car>> GetCarsByColorId(int id);
-        IDataResult<List<Car>> GetByUnitPrice(decimal min, decimal max);
+        IDataResult<List<Car>> GetCarsByDailyPrice(decimal min, decimal max);
+        IDataResult<List<Car>> GetCarsByModelYear(int min, int max);
         IDataResult<List<CarDetailDto>> GetCarDetails();
+        IDataResult<List<CarDetailDto>> GetCarDetailsById(Expression<Func<Car, bool>> filter = null);
         IResult Add(Car car);
         IResult Delete(Car car);
         IResult Update(Car car);
