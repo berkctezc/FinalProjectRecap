@@ -258,7 +258,7 @@ Kodlarınızı githuba aktarıp paylaşınız.
 
 ## Gün 18
 
-### Ödev 1
+### Ödev 1 ✔
 
 ```csharp
 /*
@@ -272,7 +272,7 @@ Car listesinde bir arabaya tıklandığında o arabaya ait detay sayfası oluşt
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/25966b42480a080caa83acb1173e4accca2e89bb)
 
 ## Gün 19
 
