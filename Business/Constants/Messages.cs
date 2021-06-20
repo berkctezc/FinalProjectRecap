@@ -51,6 +51,5 @@
         public static string SuccessfulLogin = "Başarıyla giriş yapıldı";
         public static string UserAlreadyExists = "Kullanıcı zaten bulunmakta";
         public static string AccessTokenCreated = "Erişim tokeni yaratıldı";
-
     }
 }

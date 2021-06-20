@@ -1,18 +1,18 @@
-﻿using Core.Utilities.Interceptors;
+﻿using System;
+using Business.Constants;
+using Castle.DynamicProxy;
+using Core.Extensions;
+using Core.Utilities.Interceptors;
 using Core.Utilities.IoC;
 using Microsoft.AspNetCore.Http;
-using System;
-using Castle.DynamicProxy;
 using Microsoft.Extensions.DependencyInjection;
-using Core.Extensions;
-using Business.Constants;
 
 namespace Business.BusinessAspects.Autofac
 {
     public class SecuredOperation : MethodInterception
     {
-        private readonly string[] _roles;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private string[] _roles;
+        private IHttpContextAccessor _httpContextAccessor;
 
         public SecuredOperation(string roles)
         {
