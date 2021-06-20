@@ -2,7 +2,7 @@
 
 namespace Core.CrossCuttingConcerns.Validation
 {
-    public static class ValidationTool
+    public class ValidationTool
     {
         public static void Validate(IValidator validator, object entity)
         {

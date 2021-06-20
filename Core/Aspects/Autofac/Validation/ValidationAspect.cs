@@ -7,15 +7,14 @@ using FluentValidation;
 
 namespace Core.Aspects.Autofac.Validation
 {
-    public class ValidationAspect : MethodInterception //Aspect
+    public class ValidationAspect : MethodInterception
     {
         private Type _validatorType;
         public ValidationAspect(Type validatorType)
         {
-            //defensive coding
             if (!typeof(IValidator).IsAssignableFrom(validatorType))
             {
-                throw new System.Exception("Bu bir doğrulama sınıfı değil");
+                throw new System.Exception("bu bir doğrulama sınıfı değil");
             }
 
             _validatorType = validatorType;

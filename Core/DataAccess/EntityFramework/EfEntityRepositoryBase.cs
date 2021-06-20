@@ -1,9 +1,9 @@
-﻿using Core.Entities;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Core.DataAccess.EntityFramework
 {
@@ -18,7 +18,7 @@ namespace Core.DataAccess.EntityFramework
                 var addedEntity = context.Entry(entity);
                 addedEntity.State = EntityState.Added;
                 context.SaveChanges();
-            };
+            }
         }
 
         public void Delete(TEntity entity)
@@ -28,12 +28,12 @@ namespace Core.DataAccess.EntityFramework
                 var deletedEntity = context.Entry(entity);
                 deletedEntity.State = EntityState.Deleted;
                 context.SaveChanges();
-            };
+            }
         }
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
-            using (var context = new TContext())
+            using (TContext context = new TContext())
             {
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
@@ -56,7 +56,7 @@ namespace Core.DataAccess.EntityFramework
                 var updatedEntity = context.Entry(entity);
                 updatedEntity.State = EntityState.Modified;
                 context.SaveChanges();
-            };
+            }
         }
     }
 }
