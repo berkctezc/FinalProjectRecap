@@ -3,7 +3,7 @@
 ------
 [**Angular Frontend**](https://github.com/berkctezc/FinalProjectRecap_angular)
 
-## Gün 7 
+## Gün 7 ✔
 
 ### Ödev 2 ✔
 
@@ -31,7 +31,7 @@ Kodlarınızı Github'a aktarıp paylaşınız. İncelediğiniz arkadaşlarını
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/ad7f2f932fdf77db02d4dcb750f9bb2c663b8d5a)
 
-## Gün 8 
+## Gün 8 ✔
 
 ### Ödev 1 ✔
 
@@ -67,7 +67,7 @@ Araba günlük fiyatı 0'dan büyük olmalıdır.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/a0a15887ec6b98d8e7bb7cbeeb2bdd4cab223a49)
 
-## Gün 9 
+## Gün 9  ✔
 
 ### Ödev 1 ✔
 
@@ -89,7 +89,7 @@ Başkalarının kodlarını inceleyiniz. Beğenirseniz yıldız veriniz.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/185c97f49f08cefa242e6efacf33dfef497dce74)
 
-## Gün 10 
+## Gün 10  ✔
 
 ### Ödev 1 ✔
 
@@ -124,7 +124,7 @@ CarRental projenizde;
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/85df9ae03a636b6241b5b325804cf767581433db)
 
-## Gün 11
+## Gün 11 ✔
 
 ### Ödev 1 ✔
 
@@ -141,7 +141,7 @@ Kodlarınızı paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/153f788c92e4ca1d43bfa91e748447708697c1d3)
 
-## Gün 12
+## Gün 12 ✔
 
 ### Ödev 1 ✔
 
@@ -181,7 +181,7 @@ Yazdığınız kodların Github linkini paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/99612f39ad9c61962881be4f68019bc5541f73a1)
 
-## Gün 13
+## Gün 13 ✔
 
 ### Ödev 1 ✔
 
@@ -205,7 +205,7 @@ Github linkinizi paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/e2869b32515cfb3a1d431a6675c59aa0e67894f9)
 
-## Gün 14
+## Gün 14 ✔
 
 ### Ödev 2 ✔
 
@@ -219,7 +219,7 @@ GitHub adresinizi paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/08624e9c71df64712f6125e3dda192473930be7a)
 
-## Gün 15
+## Gün 15 ✔
 
 ### Ödev 1 ✔
 
@@ -235,7 +235,7 @@ Github adresinizi paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/e5905b62fe0bcc04d4b90b85c30eb31b7ac61411)
 
-## Gün 17
+## Gün 17 ✔
 
 ### Ödev 1 ✔
 
@@ -256,7 +256,7 @@ Kodlarınızı githuba aktarıp paylaşınız.
 
 [Commit](https://github.com/berkctezc/FinalProjectRecap/commit/f35495ca0fc62ed1db675a8e4309f10ccfd4107b)
 
-## Gün 18
+## Gün 18 ✔
 
 ### Ödev 1 ✔
 
@@ -295,7 +295,7 @@ Size güveniyorum. Yapacaksınız.
 */
 ```
 
-[Commit]()
+[Commit](https://github.com/berkctezc/FinalProjectRecap/commit/07aca455ae07fd1a8d73631a86a27ccdc401cd00)
 
 ## Gün 20
 
