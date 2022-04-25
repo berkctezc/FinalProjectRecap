@@ -2,9 +2,8 @@
 using DataAccess.Abstract;
 using Entities.Concrete;
 
-namespace DataAccess.Concrete.EntityFramework
+namespace DataAccess.Concrete.EntityFramework;
+
+public class EfCarImageDal : EfEntityRepositoryBase<CarImage, CarProjectDBContext>, ICarImageDal
 {
-    public class EfCarImageDal : EfEntityRepositoryBase<CarImage, CarProjectDBContext>, ICarImageDal
-    {
-    }
 }

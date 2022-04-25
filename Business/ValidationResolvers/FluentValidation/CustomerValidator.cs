@@ -1,15 +1,14 @@
 ﻿using Entities.Concrete;
 using FluentValidation;
 
-namespace Business.ValidationResolvers.FluentValidation
+namespace Business.ValidationResolvers.FluentValidation;
+
+public class CustomerValidator : AbstractValidator<Customer>
 {
-    public class CustomerValidator : AbstractValidator<Customer>
+    public CustomerValidator()
     {
-        public CustomerValidator()
-        {
-            RuleFor(c => c.CompanyName).NotEmpty();
-            RuleFor(c => c.CompanyName).MinimumLength(5);
-            RuleFor(c => c.UserId).NotNull();
-        }
+        RuleFor(c => c.CompanyName).NotEmpty();
+        RuleFor(c => c.CompanyName).MinimumLength(5);
+        RuleFor(c => c.UserId).NotNull();
     }
 }

@@ -2,14 +2,13 @@
 using FluentValidation;
 
 
-namespace Business.ValidationResolvers.FluentValidation
+namespace Business.ValidationResolvers.FluentValidation;
+
+public class ColorValidator : AbstractValidator<Color>
 {
-    public class ColorValidator : AbstractValidator<Color>
+    public ColorValidator()
     {
-        public ColorValidator()
-        {
-            RuleFor(c => c.Name).MinimumLength(2);
-            RuleFor(c => c.Name).NotEmpty();
-        }
+        RuleFor(c => c.Name).MinimumLength(2);
+        RuleFor(c => c.Name).NotEmpty();
     }
 }

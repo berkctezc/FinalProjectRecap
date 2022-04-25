@@ -1,14 +1,11 @@
-﻿using System;
-using Core.DataAccess;
+﻿using Core.DataAccess;
 using Entities.Concrete;
 using Entities.DTOs;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 
-namespace DataAccess.Abstract
+namespace DataAccess.Abstract;
+
+public interface IRentalDal : IEntityRepository<Rental>
 {
-    public interface IRentalDal : IEntityRepository<Rental>
-    {
-        List<RentalDetailDto> GetRentalDetails();
-    }
+    List<RentalDetailDto> GetRentalDetails();
 }

@@ -2,9 +2,8 @@
 using DataAccess.Abstract;
 using Entities.Concrete;
 
-namespace DataAccess.Concrete.EntityFramework
-{
-    public class EfBrandDal : EfEntityRepositoryBase<Brand, CarProjectDBContext>, IBrandDal
-    {       
-    }
+namespace DataAccess.Concrete.EntityFramework;
+
+public class EfBrandDal : EfEntityRepositoryBase<Brand, CarProjectDBContext>, IBrandDal
+{       
 }
